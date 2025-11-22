@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Satrajit Ghosh - Graphics and Machine Learning Engineer Portfolio">
+  <title>SATRAJIT GHOSH</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles/ui-kit.css">
+  <!-- Three.js -->
+  <script type="module">
+    import * as THREE from 'https://unpkg.com/three@0.160.0/build/three.module.js';
+    window.THREE = THREE;
+    window.dispatchEvent(new Event('threejs-ready'));
+  </script>
+</head>
+<body>
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-number" id="loaderNumber">0</div>
+  </div>
+
+  <!-- Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+  
+  <!-- Graphics Layers -->
+  <canvas id="particles-canvas" class="graphics-layer"></canvas>
+  <canvas id="helix-canvas" class="graphics-layer"></canvas>
+  <div id="floating-shapes" class="floating-shapes-container"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#about" class="nav-link" data-transition-color="#000000">ABOUT</a>
+    <a href="#experience" class="nav-link" data-transition-color="#000000">EXPERIENCE</a>
+    <a href="#work" class="nav-link" data-transition-color="#000000">PROJECTS</a>
+    <a href="#publications" class="nav-link" data-transition-color="#000000">PUBLICATIONS</a>
+    <a href="#awards" class="nav-link" data-transition-color="#000000">AWARDS</a>
+    <a href="#resume" class="nav-link" data-transition-color="#000000">RESUME</a>
+    <a href="#contact" class="nav-link" data-transition-color="#000000">CONTACT</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero" data-color="#000000">
+    <h1 class="hero-title" id="heroTitle">
+      <span class="hero-line">SATRAJIT</span>
+      <span class="hero-line">GHOSH</span>
+    </h1>
+    <p class="hero-subtitle" id="heroSubtitle">GRAPHICS & MACHINE LEARNING ENGINEER</p>
+    <div class="scroll-indicator">SCROLL TO EXPLORE</div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about" data-color="#000000">
+    <div class="section-header">
+      <h2 class="section-title">ABOUT</h2>
+    </div>
+    <div class="about-content">
+      <div class="about-text">
+        <!-- About paragraphs will be dynamically loaded from data/about.json -->
+      </div>
+      <div class="skills-grid" id="skillsGrid">
+        <!-- Skills will be dynamically loaded from data/about.json -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Download Section -->
+  <section class="resume-section" id="resume" data-color="#000000">
+    <div class="section-header">
+      <h2 class="section-title">RESUME</h2>
+    </div>
+    <div class="resume-content">
+      <p class="resume-description">
+        <!-- Description will be dynamically loaded from data/about.json -->
+      </p>
+      <a href="#" class="resume-button ui-button ui-button-primary" id="resumeButton" download>
+        <span class="resume-button-text"><!-- Text will be dynamically loaded --></span>
+        <span class="resume-button-icon">↓</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience-section" id="experience" data-color="#000000">
+    <div class="section-header">
+      <h2 class="section-title">EXPERIENCE</h2>
+      <p class="section-description">Professional journey and accomplishments</p>
+    </div>
+    <div class="experience-container" id="experienceContainer">
+      <!-- Experience will be dynamically loaded from data/experience.json -->
+    </div>
+  </section>
+
+  <!-- Work/Projects Section -->
+  <section class="work-section" id="work" data-color="#000000">
+    <div class="section-header">
+      <h2 class="section-title">PROJECTS</h2>
+      <p class="section-description">A collection of projects in graphics, machine learning, and visual computing</p>
+    </div>
+    <div class="projects-container" id="projectsContainer">
+      <!-- Projects will be dynamically loaded from data/projects.json -->
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section class="publications-section" id="publications" data-color="#000000">
+    <div class="section-header">
+      <h2 class="section-title">PUBLICATIONS</h2>
+      <p class="section-description">Research papers and technical contributions</p>
+    </div>
+    <div class="publications-container" id="publicationsContainer">
+      <!-- Publications will be dynamically loaded from data/publications.json -->
+    </div>
+  </section>
+
+  <!-- Awards Section -->
+  <section class="awards-section" id="awards" data-color="#000000">
+    <div class="section-header">
+      <h2 class="section-title">AWARDS & HONORS</h2>
+      <p class="section-description">Recognition and achievements</p>
+    </div>
+    <div class="awards-container" id="awardsContainer">
+      <!-- Awards will be dynamically loaded from data/awards.json -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact" data-color="#000000">
+    <div class="section-header">
+      <h2 class="section-title">CONTACT</h2>
+    </div>
+    <div class="contact-content">
+      <p class="contact-description">
+        <!-- Description will be dynamically loaded from data/about.json -->
+      </p>
+      <div class="contact-links">
+        <!-- Contact links will be dynamically loaded from data/about.json -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer-text">© 2024 SATRAJIT GHOSH. ALL RIGHTS RESERVED.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/utils.js"></script>
+  <script src="js/modules/observer.js"></script>
+  <script src="js/modules/track.js"></script>
+  <script src="js/modules/imageReveal.js"></script>
+  <script src="js/modules/background.js"></script>
+  <script src="js/modules/loader.js"></script>
+  <script src="js/modules/scrambleText.js"></script>
+  <script src="js/modules/physics3D.js"></script>
+  <script src="js/modules/geometryField.js"></script>
+  <script src="js/modules/floatingShapes.js"></script>
+  <script src="js/modules/cursorTrail.js"></script>
+  <script src="js/modules/mouseParallax.js"></script>
+  <script src="js/modules/glowEffect.js"></script>
+  <script src="js/modules/dynamicText.js"></script>
+  <script src="js/modules/morphingBackground.js"></script>
+  <script src="js/modules/cardPhysics.js"></script>
+  <script src="js/modules/scrollInteraction.js"></script>
+  <script src="js/modules/interactiveText.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "name": {
+      "firstName": "Satrajit",
+      "lastName": "Ghosh"
+    },
+    "title": "Graphics & Machine Learning Engineer"
+  },
+  "about": {
+    "paragraphs": [
+      "I'm a Master's student in Electrical and Computer Engineering at Rutgers University, focused on real-time graphics, GPU systems, and game engines. My thesis builds on a custom C++ and OpenGL engine I wrote, where I’m parallelizing the rendering pipeline, pushing more work onto the GPU, and using CUDA–OpenGL interoperability to keep frame times stable on older low-end hardware.",
+      "Alongside the engine work, I've built neural rendering and 3D character/face reconstruction pipelines from unstructured images, and VR/AR training and visualization projects that have won hackathons and been used in practice.Before Rutgers, I completed my B.Tech in Computer Science and Business Systems at the Institute of Engineering and Management in Kolkata, graduating with a 9.51/10 GPA. During undergrad I led the AR/VR Club, co-authored a Springer Nature paper on a VR Entertainment arena, and my teams won national hackathons including IEEE Elevate, Google Solving for India, and Intel OneAPI in projects around VR, simulation, and applied computer vision. I'm applying to PhD programs in graphics and vision with an interest in real-time and neural rendering, simulation, and GPU scheduling for interactive systems."
+    ]
+  },
+  "skills": {
+    "Graphics & Rendering": [
+      "C++",
+      "OpenGL",
+      "GLSL",
+      "WebGL",
+      "Three.js",
+      "Real-time Rendering",
+      "GPU Programming"
+    ],
+    "Machine Learning": [
+      "PyTorch",
+      "Neural Rendering",
+      "NeRF",
+      "Deep Learning",
+      "Reinforcement Learning",
+      "Computer Vision"
+    ],
+    "VR/AR Development": [
+      "Unity",
+      "C#",
+      "HoloLens",
+      "Oculus",
+      "VR/AR Systems",
+      "Mixed Reality"
+    ],
+    "Languages & Tools": [
+      "Python",
+      "JavaScript",
+      "C++",
+      "Git",
+      "Blender",
+      "Docker",
+      "Jupyter Notebook"
+    ]
+  },
+  "contact": {
+    "description": "Social Links",
+    "links": [
+      {
+        "label": "EMAIL (Rutgers)",
+        "value": "satrajit.ghosh@rutgers.edu",
+        "url": "mailto:satrajit.ghosh@rutgers.edu",
+        "type": "email"
+      },
+      {
+        "label": "EMAIL (Personal)",
+        "value": "satrajitghosh183@gmail.com",
+        "url": "mailto:satrajitghosh183@gmail.com",
+        "type": "email"
+      },
+      {
+        "label": "GITHUB",
+        "value": "github.com/satrajitghosh183",
+        "url": "https://github.com/satrajitghosh183",
+        "type": "link"
+      },
+      {
+        "label": "LINKEDIN",
+        "value": "linkedin.com/in/satrajit-ghosh",
+        "url": "https://linkedin.com/in/satrajit-ghosh",
+        "type": "link"
+      }
+    ]
+  },
+  "resume": {
+    "description": "Download my complete resume for detailed information about my background, projects, and technical expertise.",
+    "buttonText": "DOWNLOAD RESUME",
+    "file": "resume/SatrajitGhosh's_Resume .pdf"
+  }
+}

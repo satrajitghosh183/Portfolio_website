@@ -1,0 +1,495 @@
+/* ============================================
+   COLORO UI KIT INSPIRED COMPONENTS
+   Modern, colorful UI elements
+   ============================================ */
+
+/* ============================================
+   COLOR PALETTE - BLACK & ELECTRIC PURPLE THEME
+   ============================================ */
+:root {
+  --coloro-primary: #4B00FF;
+  --coloro-secondary: #6B20FF;
+  --coloro-accent: #3A00CC;
+  --coloro-success: #7B40FF;
+  --coloro-purple: #4B00FF;
+  --coloro-pink: #6B20FF;
+  --coloro-blue: #5B10FF;
+  --coloro-orange: #4B00FF;
+  
+  /* Gradients - All Purple */
+  --gradient-primary: linear-gradient(135deg, #4B00FF 0%, #6B20FF 100%);
+  --gradient-secondary: linear-gradient(135deg, #6B20FF 0%, #8B40FF 100%);
+  --gradient-purple: linear-gradient(135deg, #4B00FF 0%, #7B30FF 100%);
+  --gradient-blue: linear-gradient(135deg, #7B40FF 0%, #4B00FF 100%);
+  
+  /* Glass morphism */
+  --glass-bg: rgba(0, 0, 0, 0.8);
+  --glass-border: rgba(75, 0, 255, 0.3);
+}
+
+/* ============================================
+   COLORFUL BUTTON VARIANTS
+   ============================================ */
+.ui-button {
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: clamp(0.875rem, 1.2vw, 1rem);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.ui-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+  z-index: -1;
+}
+
+.ui-button:hover::before {
+  left: 100%;
+}
+
+.ui-button-primary {
+  background: var(--gradient-primary);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(75, 0, 255, 0.4);
+}
+
+.ui-button-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(75, 0, 255, 0.6);
+}
+
+.ui-button-secondary {
+  background: var(--gradient-secondary);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(107, 32, 255, 0.4);
+}
+
+.ui-button-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(107, 32, 255, 0.6);
+}
+
+.ui-button-accent {
+  background: var(--gradient-purple);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.ui-button-accent:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
+}
+
+.ui-button-outline {
+  background: transparent;
+  border: 2px solid var(--coloro-primary);
+  color: var(--coloro-primary);
+}
+
+.ui-button-outline:hover {
+  background: var(--coloro-primary);
+  color: #ffffff;
+}
+
+.ui-button-glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  color: #ffffff;
+}
+
+.ui-button-glass:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ============================================
+   COLORFUL BADGES & TAGS
+   ============================================ */
+.ui-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.ui-badge-primary {
+  background: var(--gradient-primary);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(75, 0, 255, 0.4);
+}
+
+.ui-badge-secondary {
+  background: var(--gradient-secondary);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(107, 32, 255, 0.4);
+}
+
+.ui-badge-purple {
+  background: var(--gradient-purple);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(75, 0, 255, 0.4);
+}
+
+.ui-badge-blue {
+  background: var(--gradient-blue);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(123, 64, 255, 0.4);
+}
+
+.ui-badge-glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  color: #ffffff;
+}
+
+/* Enhanced project tags with UI kit badges */
+.project-tag.ui-badge,
+.experience-tech-tag.ui-badge {
+  font-size: 0.75rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.project-tag.ui-badge:hover,
+.experience-tech-tag.ui-badge:hover {
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* ============================================
+   COLORFUL CARDS
+   ============================================ */
+.ui-card {
+  padding: 2rem;
+  border-radius: 16px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.ui-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--gradient-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.ui-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.ui-card:hover::before {
+  transform: scaleX(1);
+}
+
+.ui-card-gradient {
+  background: var(--gradient-primary);
+  color: #ffffff;
+}
+
+.ui-card-gradient-secondary {
+  background: var(--gradient-secondary);
+  color: #ffffff;
+}
+
+.ui-card-gradient-purple {
+  background: var(--gradient-purple);
+  color: #ffffff;
+}
+
+/* Skill categories with gradient cards */
+.skill-category.ui-card-gradient-secondary .skill-category-title,
+.skill-category.ui-card-gradient-purple .skill-category-title {
+  color: inherit;
+}
+
+.skill-category.ui-card-gradient-secondary .skill-item,
+.skill-category.ui-card-gradient-purple .skill-item {
+  opacity: 0.9;
+}
+
+/* ============================================
+   COLORFUL ACCENT LINES
+   ============================================ */
+.accent-line {
+  height: 4px;
+  width: 60px;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+  margin: 1rem 0;
+  animation: accentGrow 0.8s ease-out forwards;
+}
+
+@keyframes accentGrow {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 60px;
+    opacity: 1;
+  }
+}
+
+.accent-line-secondary {
+  background: var(--gradient-secondary);
+}
+
+.accent-line-purple {
+  background: var(--gradient-purple);
+}
+
+/* ============================================
+   COLORFUL STATS/METRICS
+   ============================================ */
+.ui-stat {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  transition: all 0.3s ease;
+}
+
+.ui-stat:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.ui-stat-number {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 700;
+  color: #4B00FF;
+  margin-bottom: 0.5rem;
+}
+
+.ui-stat-label {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.7;
+}
+
+/* ============================================
+   COLORFUL NAVIGATION ACCENTS
+   ============================================ */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gradient-primary);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:nth-child(1)::after { background: var(--gradient-primary); }
+.nav-link:nth-child(2)::after { background: var(--gradient-secondary); }
+.nav-link:nth-child(3)::after { background: var(--gradient-purple); }
+.nav-link:nth-child(4)::after { background: var(--gradient-blue); }
+
+/* ============================================
+   COLORFUL SECTION ACCENTS
+   ============================================ */
+.section-title {
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.8s ease 0.5s;
+}
+
+.section-title.animate-in::after {
+  opacity: 1;
+}
+
+.work-section .section-title::after { background: var(--gradient-primary); }
+.experience-section .section-title::after { background: var(--gradient-purple); }
+.about-section .section-title::after { background: var(--gradient-secondary); }
+.resume-section .section-title::after { background: var(--gradient-blue); }
+
+/* ============================================
+   COLORFUL HOVER STATES
+   ============================================ */
+.colorful-hover {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.colorful-hover::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: var(--gradient-primary);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.colorful-hover:hover::before {
+  opacity: 0.3;
+  filter: blur(8px);
+}
+
+/* ============================================
+   COLORFUL LOADING INDICATORS
+   ============================================ */
+.ui-loader {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  border-top-color: var(--coloro-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.ui-loader-gradient {
+  border-top-color: transparent;
+  border-image: var(--gradient-primary) 1;
+  border-radius: 50%;
+}
+
+/* ============================================
+   COLORFUL PROGRESS BARS
+   ============================================ */
+.ui-progress {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.ui-progress-bar {
+  height: 100%;
+  background: var(--gradient-primary);
+  border-radius: 4px;
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.ui-progress-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* ============================================
+   COLORFUL DIVIDERS
+   ============================================ */
+.ui-divider {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  margin: 2rem 0;
+}
+
+.ui-divider-gradient {
+  height: 2px;
+  background: var(--gradient-primary);
+  border: none;
+  margin: 2rem 0;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .ui-button {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .ui-card {
+    padding: 1.5rem;
+  }
+  
+  .ui-stat {
+    padding: 1rem;
+  }
+}
+

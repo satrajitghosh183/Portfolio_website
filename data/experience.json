@@ -1,0 +1,79 @@
+[
+  {
+    "title": "Research Assistant",
+    "company": "Rutgers University - Sensing and Reasoning Lab",
+    "date": "Jun 2025 – Aug 2025",
+    "description": "Researched autonomous driving in Professor Jorge Ortiz's Sensing and Reasoning Lab, building high-fidelity driving simulations from real-world data and mentoring undergraduates on graphics and machine learning projects.",
+    "technologies": ["Python", "C++", "OpenGL", "Machine Learning", "Simulation"],
+    "projects": [
+      {
+        "title": "Real-Time Driving Simulation with Real-World Data",
+        "description": "Designed and implemented a high-fidelity autonomous driving simulation pipeline that reuses real-world driving logs and established codebases such as SafeBench to reproduce and extend prior autonomous driving results.",
+        "github": null,
+        "demo": null,
+        "year": "2025"
+      }
+    ]
+  },
+  {
+    "title": "Grader",
+    "company": "Rutgers University - Introduction to Machine Learning",
+    "date": "2025 – Present",
+    "description": "Grading for Professor Waheed Bajwa's Introduction to Machine Learning course, reviewing full solutions, providing feedback, and ensuring consistent evaluation across diverse correct approaches.",
+    "technologies": ["Machine Learning", "Python", "Education"],
+    "projects": []
+  },
+  {
+    "title": "Tech & Product Intern",
+    "company": "Thirdbase Capital",
+    "date": "May 2025 – Aug 2025",
+    "description": "Built enterprise-grade investment scoring software for private capital and an AI-powered phishing detection solution using behavioral anomaly modeling. Integrated models into existing products with robust logging, safe fallbacks, and maintainable interfaces while contributing to full-stack prototyping and competitive research.",
+    "technologies": ["Python", "Machine Learning", "Financial Analysis", "Security", "Email Processing"],
+    "projects": [
+      {
+        "title": "Investment Analysis Model",
+        "description": "Developed an analysis model over small-business financial and behavioral data to generate investment scores and allocation suggestions for private capital workflows.",
+        "github": null,
+        "demo": null,
+        "year": "2025"
+      },
+      {
+        "title": "Phishing Detection System",
+        "description": "Implemented a behavioral signal-based phishing detector that monitors email content and usage patterns to flag suspicious activity, with clean integration into existing products.",
+        "github": null,
+        "demo": null,
+        "year": "2025"
+      }
+    ]
+  },
+  {
+    "title": "AR/VR and ML Intern",
+    "company": "IEMA Research and Development",
+    "date": "May 2022 – Oct 2023",
+    "description": "Delivered AR and VR solutions under strict latency, reliability, and usability constraints, including a mixed reality walkthrough of an Ericsson facility on HoloLens, a VR house tour on Oculus for an architecture firm, and an Android translator app using a Whisper-style speech pipeline for the Indian Army.",
+    "technologies": ["Unity", "C#", "VR", "AR", "HoloLens", "Oculus", "Android", "Speech Processing"],
+    "projects": [
+      {
+        "title": "Ericsson Facility MR Walkthrough",
+        "description": "Built a detailed 3D model of an Ericsson facility in Blender and Unity and deployed it as a mixed reality walkthrough on Microsoft HoloLens for training and demonstration.",
+        "github": null,
+        "demo": null,
+        "year": "2023"
+      },
+      {
+        "title": "VR House Tour",
+        "description": "Created a VR house tour application on Oculus to help an architecture firm showcase properties and support client procurement, including basic annotation and interaction tools.",
+        "github": "https://github.com/satrajitghosh183/Housing-Walkthrough",
+        "demo": null,
+        "year": "2023"
+      },
+      {
+        "title": "Android Translator App",
+        "description": "Developed an Android translator app for the Indian Army using an OpenAI- and Whisper-style speech pipeline to perform low-latency, robust speech-to-speech translation in the field.",
+        "github": null,
+        "demo": null,
+        "year": "2023"
+      }
+    ]
+  }
+]

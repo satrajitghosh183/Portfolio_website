@@ -1,0 +1,112 @@
+[
+  {
+    "title": "LAGEngine",
+    "description": "C++/OpenGL/CUDA game and physics engine built as my master's thesis platform for parallel rendering and GPU scheduling experiments.",
+    "longDescription": "LAGEngine is a custom C++/OpenGL game and physics engine that I use as the core platform for my master's thesis on AI-assisted parallel scheduling for real-time rendering and simulation. The engine implements a DAG-aware multithreaded pipeline and CUDA–OpenGL interoperability so GPU kernels can write directly into graphics buffers and textures. It supports real-time 2D/3D rendering, rigid-body and cloth simulation, and instrumentation of frame timings, queue depths, and device utilization, making it suitable both for game development and for controlled experiments on work stealing and GPU stream scheduling under heavy physics scenes.",
+    "tags": ["C++", "OpenGL", "CUDA", "Game Engine", "Graphics", "AI"],
+    "github": "https://github.com/satrajitghosh183/LAGEngine",
+    "demo": null,
+    "year": "2025",
+    "status": "Active",
+    "category": "Graphics & Game Engine"
+  },
+  {
+    "title": "Neural Character Generation",
+    "description": "End-to-end NeRF-based pipeline to generate photorealistic, animatable 3D characters from unstructured image collections.",
+    "longDescription": "A unified neural rendering pipeline for generating realistic, animatable 3D characters from sparse, messy 2D image collections. The system uses NeRFtrinsic-style pose and focal refinement with Gaussian Fourier features, builds multimodal tokens from DINOv2 features and geometric cues, and employs a transformer-based view selection module to choose informative viewpoints. An attention-augmented NeRF backbone reconstructs a high-fidelity 3D representation that supports mesh extraction, relighting, and animation for downstream use in games, XR, and avatar applications.",
+    "tags": ["Python", "NeRF", "Neural Rendering", "3D Reconstruction", "Deep Learning"],
+    "github": "https://github.com/satrajitghosh183/NeuralCharacterGeneration",
+    "demo": null,
+    "year": "2025",
+    "status": "Completed",
+    "category": "Graphics & ML"
+  },
+  {
+    "title": "Code and Conquer",
+    "description": "A gamified tower-defense learning platform that blends coding challenges with a castle-defense game loop.",
+    "longDescription": "Code and Conquer is a tower-defense style learning game where players defend a castle while progressing through small, focused programming challenges. Built with Python and Pygame, it combines a casual game loop (waves of enemies, resource management, tower placement) with coding tasks that unlock abilities, upgrades, and new levels. The project explores how game mechanics, streaks, and progression systems can be used to keep learners engaged and to make foundational programming practice feel more like a game than a problem set.",
+    "tags": ["Python", "Pygame", "Game Development", "Education"],
+    "github": "https://github.com/satrajitghosh183/Code_and_Conquer",
+    "demo": null,
+    "year": "2025",
+    "status": "Completed",
+    "category": "Game Development"
+  },
+  {
+    "title": "The Market Whisperer",
+    "description": "An AI- and quant-driven trading platform with deterministic analytics, risk-aware signals, and explainable recommendations.",
+    "longDescription": "The Market Whisperer is a quantitative trading and research platform that combines classical factor modeling with machine learning. It ingests multi-source market data and computes calendar-aware technical features, sentiment and policy signals, and risk metrics to produce a transparent scalar score per asset. Each recommendation is backed by an auditable feature vector, risk-aware position sizing, and a human-readable explanation string that is provably grounded in stored indicators. The system is designed so every output can be reproduced from manifests and code versioning, making it suitable for systematic strategies, backtesting, and research workflows.",
+    "tags": ["Python", "Machine Learning", "Quantitative Finance", "AI"],
+    "github": "https://github.com/satrajitghosh183/The-Market-Whisperer",
+    "demo": null,
+    "year": "2025",
+    "status": "Completed",
+    "category": "Machine Learning"
+  },
+  {
+    "title": "InvestorInbox",
+    "description": "AI-driven email enrichment and outreach assistant for managing investor fundraising pipelines.",
+    "longDescription": "InvestorInbox is an AI-assisted email and workflow tool for fundraising. It parses inbound and outbound investor emails, enriches contacts with public and interaction-derived signals, and clusters investors by stage, thesis, and prior behavior. The system helps founders prioritize warm leads, draft context-aware follow-ups, and track pipeline health. Under the hood it uses NLP models for entity extraction and intent classification, plus ranking and scoring logic to suggest the next best email to send in an investor funnel.",
+    "tags": ["Python", "AI", "Email Processing", "NLP"],
+    "github": "https://github.com/satrajitghosh183/InvestorInbox",
+    "demo": null,
+    "year": "2025",
+    "status": "Completed",
+    "category": "Machine Learning"
+  },
+  {
+    "title": "McGurk Effect",
+    "description": "Stress-testing multimodal deep learning models on audio-visual incongruence (McGurk effect).",
+    "longDescription": "Research project that probes how multimodal models respond to the McGurk effect, where conflicting audio and lip-motion cues produce a third perceived phoneme. The pipeline generates controlled audio–video mismatches, runs them through state-of-the-art models, and logs how prediction distributions shift relative to clean baselines. The goal is to quantify robustness and failure modes of multimodal perception systems under realistic but adversarial audio-visual incongruence, and to build benchmarks that capture these effects.",
+    "tags": ["Jupyter Notebook", "Deep Learning", "Multimodal", "Research"],
+    "github": "https://github.com/satrajitghosh183/McGurk-Effect",
+    "demo": null,
+    "year": "2024",
+    "status": "Completed",
+    "category": "Research"
+  },
+  {
+    "title": "VitalityVR",
+    "description": "VR fitness game with real-time metric tracking, analytics, and ML-based coaching features.",
+    "longDescription": "VitalityVR is a Unity-based VR exercise game that turns workouts into immersive challenges while tracking key fitness metrics. Gameplay is paired with a web analytics dashboard backed by deep learning models deployed on Google Cloud. The system uses DNNs to infer user behavior and fatigue patterns and GAN-based components to suggest diet or routine variations. It was built as a full-stack VR + ML experience and has been recognized at hackathons for its combination of engagement and data-driven coaching.",
+    "tags": ["Unity", "VR", "Fitness", "Deep Learning", "Analytics"],
+    "github": "https://github.com/satrajitghosh183/VitalityVR_byDonuts",
+    "demo": null,
+    "year": "2024",
+    "status": "Completed",
+    "category": "VR & Health"
+  },
+  {
+    "title": "VRProperty-Pro",
+    "description": "VR house-hunting and analytics platform combining VR tours with IoT capture, ML pricing, and blockchain-backed transparency.",
+    "longDescription": "VRProperty-Pro is a VR-based real-estate platform that virtualizes house hunting. Properties are captured using an IoT-enabled 360° photo device, reconstructed into immersive VR walkthroughs, and served to users so they can explore rooms and layouts remotely. The platform integrates an Ethereum-based backend for transparent, tamper-resistant transaction logs and uses a random forest regression model to provide short- and medium-term price forecasts based on location, amenities, and market trends. It was built as a hackathon project that combines Unity-based VR, IoT, blockchain, and machine learning into a single real-estate experience.",
+    "tags": ["Unity", "VR", "Real Estate", "IoT", "Machine Learning"],
+    "github": "https://github.com/satrajitghosh183/VRProperty-Pro",
+    "demo": null,
+    "year": "2023",
+    "status": "Completed",
+    "category": "VR Real Estate"
+  },
+  {
+    "title": "VR Pointer and Annotation",
+    "description": "VR annotation and pointer system for instructional walkthroughs and industrial training scenarios.",
+    "longDescription": "A Unity-based VR tool that enables instructors and trainers to place pointers, highlights, and annotations directly into a 3D scene. Originally developed as part of VR training modules for an Ericsson warehouse, it lets users mark equipment, define guided paths, and create step-by-step learning flows entirely in VR. The focus is on intuitive authoring of annotations, low-latency pointer updates, and clear visual feedback so the same scene can be reused for multiple training procedures without code changes.",
+    "tags": ["C#", "VR", "Unity", "Education"],
+    "github": "https://github.com/satrajitghosh183/VR_POINTER_AND_ANNOTATION",
+    "demo": null,
+    "year": "2023",
+    "status": "Completed",
+    "category": "VR & Education"
+  },
+  {
+    "title": "Housing Walkthrough",
+    "description": "Production VR housing walkthrough for an architecture firm, built with Unity and Blender assets.",
+    "longDescription": "Immersive VR walkthrough application used by an architecture firm to showcase properties to clients. The pipeline combines Blender-modeled interiors and exteriors with a Unity-based Oculus application that supports teleportation, room-to-room navigation, and inspection of key design elements. The focus was on creating a smooth, comfortable experience suitable for non-technical clients while maintaining realistic lighting and scale for pre-construction property visualization.",
+    "tags": ["C#", "VR", "Unity", "Blender"],
+    "github": "https://github.com/satrajitghosh183/Housing-Walkthrough",
+    "demo": null,
+    "year": "2023",
+    "status": "Completed",
+    "category": "VR & Real Estate"
+  }
+]

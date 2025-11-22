@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Director's Award for Best Student Contribution",
+    "organization": "Institute of Engineering & Management (IEM)",
+    "date": "Apr 2024",
+    "description": "Awarded the Director's Award for Best Student Contribution at the Institute of Engineering & Management (IEM).",
+    "category": "Award"
+  },
+  {
+    "title": "3rd Place – Google and GeeksforGeeks Solving for India",
+    "organization": "Google & GeeksforGeeks",
+    "date": "Jun 2023",
+    "description": "Won 3rd place for Vitality VR, a fitness and analytics experience built in Unity with deep learning models on Google Cloud for immersive, gamified workouts.",
+    "category": "Hackathon"
+  },
+  {
+    "title": "5th Place – Intel OneAPI Hackathon for Open Innovation",
+    "organization": "Intel",
+    "date": "Apr 2023",
+    "description": "Reached the final 20 teams and placed 5th with an intelligent traffic management system using deep learning for vehicle detection and OCR-based license plate recognition.",
+    "category": "Hackathon"
+  },
+  {
+    "title": "1st Place – IEEE Elevate Hackathon",
+    "organization": "IEEE / IEM",
+    "date": "",
+    "description": "Won 1st place at the IEEE Elevate Hackathon representing IEM with an AR/VR-focused project.",
+    "category": "Hackathon"
+  },
+  {
+    "title": "1st Place – IEEE Technovation Hackathon",
+    "organization": "IEEE / IEM",
+    "date": "",
+    "description": "Won 1st place in the IEEE Technovation Hackathon at the Institute of Engineering & Management (IEM).",
+    "category": "Hackathon"
+  },
+  {
+    "title": "Second Place – MAUKAT Videography Competition",
+    "organization": "MAUKAT",
+    "date": "",
+    "description": "Secured second place in the MAUKAT Videography Competition.",
+    "category": "Competition"
+  },
+  {
+    "title": "Second Place – Smart Maker Hackathon",
+    "organization": "Smart Maker",
+    "date": "",
+    "description": "Secured second place in the Smart Maker Hackathon.",
+    "category": "Hackathon"
+  },
+  {
+    "title": "Undergraduate GPA 9.51/10",
+    "organization": "Institute of Engineering & Management, Kolkata",
+    "date": "2020–2024",
+    "description": "Graduated with a 9.51/10 GPA in Computer Science and Business Systems while serving as President of the AR/VR Club and leading multiple award-winning VR and ML projects.",
+    "category": "Academic"
+  }
+]
