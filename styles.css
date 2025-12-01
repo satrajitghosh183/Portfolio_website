@@ -253,9 +253,8 @@ section::before {
 
 .chain-indicator {
   position: absolute;
-  left: 2rem;
-  bottom: 4rem;
-  font-size: 0.875rem;
+  bottom: 2rem;
+  font-size: 0.75rem;
   letter-spacing: 0.1em;
   opacity: 0;
   animation: fadeInUp 0.8s ease-out 2s forwards;
