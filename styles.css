@@ -251,6 +251,17 @@ section::before {
   animation: fadeInUp 0.8s ease-out 1.5s forwards;
 }
 
+.chain-indicator {
+  position: absolute;
+  left: 2rem;
+  bottom: 4rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 2s forwards;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 /* ============================================
    NAVIGATION
    ============================================ */
