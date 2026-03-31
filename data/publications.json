@@ -1,8 +1,33 @@
 [
   {
+    "title": "Kuiper TTS: Making Legacy Scientific Papers Accessible by Converting Equations into Spoken Language",
+    "authors": ["Satrajit Ghosh", "et al."],
+    "venue": "IEEE ISEC 2026",
+    "year": "2026",
+    "type": "Conference Paper",
+    "status": "Published",
+    "abstract": "Kuiper TTS is an end-to-end pipeline for converting academic PDFs — including mathematical equations — into structured LaTeX and spoken audio, making legacy scientific literature accessible to visually impaired researchers. The system integrates layout detection, equation OCR, LLM-based LaTeX reconstruction, and neural TTS with per-stage validation and C++-based production inference.",
+    "pdf": null,
+    "link": null,
+    "tags": ["Accessibility", "TTS", "OCR", "LaTeX", "PDF Processing", "C++", "LLM"],
+    "award": "2nd Prize, Best Paper"
+  },
+  {
+    "title": "Read the Math: Improving Mathematics Education Using Vision-Accessibility Techniques",
+    "authors": ["K. G. August", "et al."],
+    "venue": "IEEE ISEC 2026",
+    "year": "2026",
+    "type": "Conference Paper",
+    "status": "Published",
+    "abstract": "Applies vision-accessibility techniques to improve how mathematical content is parsed, rendered, and communicated in educational contexts, enabling more inclusive math education through document understanding and structured output pipelines.",
+    "pdf": null,
+    "link": null,
+    "tags": ["Accessibility", "Mathematics Education", "Vision", "Document Understanding"]
+  },
+  {
     "title": "VR Arena: Virtual Reality-Based Entertainment for Society",
-    "authors": ["Satrajit Ghosh"],
-    "venue": "Springer Nature – VR Arena: Virtual Reality-Based Entertainment for Society",
+    "authors": ["Satrajit Ghosh", "et al."],
+    "venue": "Springer Nature",
     "year": "2024",
     "type": "Book Chapter",
     "status": "Published",
