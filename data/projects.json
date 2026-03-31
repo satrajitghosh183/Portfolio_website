@@ -1,10 +1,32 @@
 [
   {
+    "title": "Kuiper-TTS",
+    "description": "Best Paper, IEEE ISEC 2026 — End-to-end pipeline converting academic PDFs to structured LaTeX and spoken audio for visually impaired researchers.",
+    "longDescription": "Kuiper-TTS is an end-to-end accessibility pipeline that converts academic PDFs into structured LaTeX and spoken audio for visually impaired researchers. The system combines custom-trained equation recognition models, layout detection, and equation OCR with LLM-based LaTeX reconstruction and neural TTS synthesis. Each stage includes per-stage validation to ensure correctness. Inference is ported to C++ for production-grade speed. Awarded Best Paper at IEEE ISEC 2026.",
+    "tags": ["C++", "Python", "TTS", "OCR", "LLM", "LaTeX", "Accessibility", "Deep Learning"],
+    "github": null,
+    "demo": null,
+    "year": "2026",
+    "status": "Completed",
+    "category": "Research & Accessibility"
+  },
+  {
+    "title": "OLMo-CPP",
+    "description": "34M-parameter transformer implemented from scratch in C++17 with full attention, RoPE, KV caching, and speculative decoding — no framework dependencies beyond LibTorch.",
+    "longDescription": "A 34M-parameter transformer implemented entirely from scratch in C++17 using LibTorch for tensor operations. The full forward pass is hand-written, covering multi-head attention with grouped-query attention, RoPE positional encoding, SiLU activations, QK-norm, and sliding window attention. Supports KV caching for efficient incremental decoding and multi-token prediction heads for speculative decoding. The tokenizer, weight loader, and memory management are all built from scratch with no other framework dependencies.",
+    "tags": ["C++17", "LibTorch", "Transformers", "LLM", "Systems", "Deep Learning"],
+    "github": null,
+    "demo": null,
+    "year": "2025",
+    "status": "Completed",
+    "category": "Systems & ML"
+  },
+  {
     "title": "LAGEngine",
-    "description": "C++/OpenGL/CUDA game and physics engine built as my master's thesis platform for parallel rendering and GPU scheduling experiments.",
-    "longDescription": "LAGEngine is a custom C++/OpenGL game and physics engine that I use as the core platform for my master's thesis on AI-assisted parallel scheduling for real-time rendering and simulation. The engine implements a DAG-aware multithreaded pipeline and CUDA–OpenGL interoperability so GPU kernels can write directly into graphics buffers and textures. It supports real-time 2D/3D rendering, rigid-body and cloth simulation, and instrumentation of frame timings, queue depths, and device utilization, making it suitable both for game development and for controlled experiments on work stealing and GPU stream scheduling under heavy physics scenes.",
-    "tags": ["C++", "OpenGL", "CUDA", "Game Engine", "Graphics", "AI"],
-    "github": "https://github.com/satrajitghosh183/LAGEngine",
+    "description": "Master's thesis — real-time 3D simulation engine with rigid-body dynamics, XPBD cloth, SPH fluids, deferred PBR rendering, and a PPO/DDPG RL auto-tuner that reduced mean frame time by 23.79%.",
+    "longDescription": "LAGEngine is a real-time 3D simulation engine built from scratch in C++17 as my master's thesis. It implements rigid-body dynamics, XPBD cloth simulation, SPH fluids, deferred PBR rendering, an ECS architecture, a Chase-Lev work-stealing job scheduler, CUDA/OpenGL interop, Lua scripting, and an ImGui-based editor. A PPO/DDPG reinforcement learning auto-tuner was integrated to optimize runtime scheduling parameters, achieving a 23.79% reduction in mean frame time without destabilizing the simulation. Ships with 11 standalone demos.",
+    "tags": ["C++17", "OpenGL", "CUDA", "PPO", "DDPG", "Physics", "Game Engine", "Reinforcement Learning"],
+    "github": "https://github.com/satrajitghosh183/LagEngine-Release",
     "demo": null,
     "year": "2025",
     "status": "Active",
