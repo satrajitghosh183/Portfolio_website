@@ -1,45 +1,28 @@
 [
   {
-    "title": "Research Assistant",
-    "company": "Rutgers University - Sensing and Reasoning Lab",
-    "date": "Jun 2025 – Aug 2025",
-    "description": "Researched autonomous driving in Professor Jorge Ortiz's Sensing and Reasoning Lab, building high-fidelity driving simulations from real-world data and mentoring undergraduates on graphics and machine learning projects.",
-    "technologies": ["Python", "C++", "OpenGL", "Machine Learning", "Simulation"],
+    "title": "Graduate Researcher",
+    "company": "Rutgers University",
+    "date": "Jun 2025 – Present",
+    "description": "Building software systems for AI across document processing, retrieval/ranking, and autonomous driving simulation. Co-authored two ISEC 2026 papers.",
+    "technologies": ["C++", "Python", "MuPDF", "LibTorch", "ONNX Runtime", "SQLite", "Simulation"],
     "projects": [
       {
-        "title": "Real-Time Driving Simulation with Real-World Data",
-        "description": "Designed and implemented a high-fidelity autonomous driving simulation pipeline that reuses real-world driving logs and established codebases such as SafeBench to reproduce and extend prior autonomous driving results.",
-        "github": null,
-        "demo": null,
-        "year": "2025"
-      }
-    ]
-  },
-  {
-    "title": "Grader",
-    "company": "Rutgers University - Introduction to Machine Learning",
-    "date": "2025 – Present",
-    "description": "Grading for Professor Waheed Bajwa's Introduction to Machine Learning course, reviewing full solutions, providing feedback, and ensuring consistent evaluation across diverse correct approaches.",
-    "technologies": ["Machine Learning", "Python", "Education"],
-    "projects": []
-  },
-  {
-    "title": "Tech & Product Intern",
-    "company": "Thirdbase Capital",
-    "date": "May 2025 – Aug 2025",
-    "description": "Built enterprise-grade investment scoring software for private capital and an AI-powered phishing detection solution using behavioral anomaly modeling. Integrated models into existing products with robust logging, safe fallbacks, and maintainable interfaces while contributing to full-stack prototyping and competitive research.",
-    "technologies": ["Python", "Machine Learning", "Financial Analysis", "Security", "Email Processing"],
-    "projects": [
-      {
-        "title": "Investment Analysis Model",
-        "description": "Developed an analysis model over small-business financial and behavioral data to generate investment scores and allocation suggestions for private capital workflows.",
+        "title": "Kuiper Project",
+        "description": "Architected a C++-centric system for academic PDF to structured LaTeX and speech, integrating MuPDF parsing, layout analysis, equation OCR, validation, and native inference workflows; co-authored two ISEC 2026 papers.",
         "github": null,
         "demo": null,
         "year": "2025"
       },
       {
-        "title": "Phishing Detection System",
-        "description": "Implemented a behavioral signal-based phishing detector that monitors email content and usage patterns to flag suspicious activity, with clean integration into existing products.",
+        "title": "iPapers.ai",
+        "description": "Built retrieval, ranking, and evaluation tooling for scientific search, including dataset preprocessing, parallel backend workflows, benchmark analysis, and large-scale result comparison.",
+        "github": null,
+        "demo": null,
+        "year": "2025"
+      },
+      {
+        "title": "Sensing and Reasoning Lab",
+        "description": "Developed autonomous-driving scenario generation and benchmark execution workflows from real-world logs, supporting reliability-oriented simulation and evaluation.",
         "github": null,
         "demo": null,
         "year": "2025"
@@ -47,11 +30,27 @@
     ]
   },
   {
+    "title": "Graduate Grading Assistant",
+    "company": "Rutgers University ECE",
+    "date": "Aug 2025 – Present",
+    "description": "Supported Computer Architecture, Convex Optimisation, and Intro to Machine Learning by debugging student code, writing solution keys, and providing detailed technical feedback on correctness, performance, and design.",
+    "technologies": ["C++", "Python", "Machine Learning", "Computer Architecture", "Education"],
+    "projects": []
+  },
+  {
+    "title": "Tech & Product Intern",
+    "company": "Thirdbase Capital",
+    "date": "May 2025 – Sep 2025",
+    "description": "Built scoring and data-processing tools for private-capital analysis and developed full-stack internal prototypes with anomaly-detection components and model-backed workflows.",
+    "technologies": ["Python", "Machine Learning", "Financial Analysis", "Anomaly Detection"],
+    "projects": []
+  },
+  {
     "title": "AR/VR and ML Intern",
     "company": "IEMA Research and Development",
     "date": "May 2022 – Oct 2023",
-    "description": "Delivered AR and VR solutions under strict latency, reliability, and usability constraints, including a mixed reality walkthrough of an Ericsson facility on HoloLens, a VR house tour on Oculus for an architecture firm, and an Android translator app using a Whisper-style speech pipeline for the Indian Army.",
-    "technologies": ["Unity", "C#", "VR", "AR", "HoloLens", "Oculus", "Android", "Speech Processing"],
+    "description": "Built AR/VR and mobile prototypes in Unity, Blender, and Android Studio, contributing interactive features, integration work, and deployment-focused debugging.",
+    "technologies": ["Unity", "C#", "VR", "AR", "HoloLens", "Oculus", "Android", "Blender"],
     "projects": [
       {
         "title": "Ericsson Facility MR Walkthrough",
